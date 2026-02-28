@@ -1,0 +1,302 @@
+/* .bulb{
+    width: 150px;
+    height: 150px;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: rgb(252, 238, 41);
+    border-radius: 50%;
+    margin-left: 80px;
+
+} 
+ button{
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 10px;
+    margin-left: 136px;
+    
+} */
+
+
+THIS IS THE CODE FOR THE BULB USING DOM
+
+***********************************************************************
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: fantasy;
+    /* background-color: rgb(46, 45, 44); */
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(208, 208, 207);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#wrapper{
+    width: 40%;
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#parent{
+    height: 100%;
+    width: 100%;
+    background-color: royalblue;
+    margin: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+/* 
+    THESE PROPERTIES ARE ONLY FOR THE CONTENT INSIDE IT THEY DIDN'T AFFECT THE CONTAINER ITSELF 
+*/
+
+    border: none;
+    border-radius: 20px;
+    
+    
+}
+
+
+
+#child{
+    height: 60%;
+    width: 60%;
+    background-color: rgb(225, 225, 65);
+    
+    border: none;
+    border-radius: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+#gChild{
+    height: 50%;
+    width: 50% ;
+    background-color: aquamarine;
+
+    border: none;
+    border-radius: 10px ;
+}
+
+button{
+    margin: 10px 10px;
+    padding-left: 10px ;
+    padding-right: 10px ;
+    padding-top: 9px;
+
+    font-size: large;
+    font-weight: 900;
+
+
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(92, 98, 220);
+    color: aliceblue;
+
+    
+}
+
+button:hover{
+    background-color: rgb(108, 195, 195);
+    color: rgb(19, 19, 19);
+}
+
+
+THIS IS THE CODE FOR BOX INSIDE BOX INSIDE BOX WITH A DOWNLOAD BUTTON 
+
+
+
+
+*************************************************************************************
+
+
+#######.    MICROSOFT LOGO.      ########
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html , body{
+    height: 100% ;
+    width: 100% ;
+
+    background-color: rgb(172, 172, 164);
+}
+
+#box1{
+    height: 150px;
+    width: 150px;
+    border: 2px solid rgb(255, 254, 254);
+    background-color: salmon;
+
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+    
+
+    /* transform:translate(-50%, -50%) */
+}
+
+
+#box2{
+    height: 150px;
+    width: 150px;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgb(131, 235, 247);
+
+
+    position: absolute;
+    top: 50% ;
+    right: 50% ;
+    
+}
+#box3{
+    height: 150px;
+    width: 150px;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgb(158, 247, 131);
+
+
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    
+}
+#box4{
+    height: 150px;
+    width: 150px;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgb(247, 237, 131);
+
+
+    position: absolute;
+    left: 50% ;
+    top: 50% ;
+    
+}
+
+
+
+/* 
+    z-index :- it is the property by which we can decide which element will came over which element
+*/
+
+
+
+*******************************************************************************
+
+
+#######.   IMAGE BOX.   #########
+
+#parent{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    justify-content: space-evenly;
+}
+
+.child{
+    height: 350px;
+    width: 350px;
+    background-color: rgb(238, 39, 79);
+    border: 4px solid rgb(255, 249, 249);
+    border-radius: none;
+    background-image: url(https://images.unsplash.com/photo-1716798781256-38d9b59767d0?q=80&w=986&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+
+    background-size: cover ;
+    background-position: center;
+}
+
+#box2{
+
+    background-image: url(https://images.unsplash.com/photo-1600955365299-8883fc7c85a6?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+
+    background-size: 130% ;
+    background-position: center;
+
+}
+
+
+
+
+**************************************************************************
+
+
+
+######   MICROSOFT LOGO USING DISPLAY FLEX    ########
+
+
+
+#parent{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+     justify-content: center;
+
+}
+
+
+#upper{
+    display: flex;
+}
+#lower{
+    display: flex;
+}
+
+#box1{
+    height: 150px;
+    width: 150px;
+    background-color: rgb(247, 111, 96);
+    border: 2px solid white;
+    border-top-left-radius: 15px;
+}
+
+
+#box2{
+    height: 150px;
+    width: 150px;
+    background-color: rgb(143, 227, 98);
+    border: 2px solid white;
+    border-top-right-radius: 15px;
+}
+
+
+#box3{
+    height: 150px;
+    width: 150px;
+    background-color: rgb(114, 209, 250);
+    border: 2px solid white;
+    border-bottom-left-radius: 15px;
+}
+
+
+#box4{
+    height: 150px;
+    width: 150px;
+    background-color: rgb(247, 235, 102);
+    border: 2px solid white;
+    border-bottom-right-radius: 15px;
+}
+
