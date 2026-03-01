@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html body {
+    background-color: #0f1618;
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.box{
+
+    height: 60%;
+    width: 28%;
+    border: 2px solid #454841;
+    border-radius: 15px;
+}
+
+
+
+.box .upper{
+    height: 60%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.box .lower{
+    height: 40%;
+    width: 100%;
+    color: rgb(236, 232, 232);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    font-family: system-ui, -apple-system;
+    line-height: 25px;
+}
